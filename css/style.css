@@ -1,0 +1,74 @@
+/*===== CSS file table ====== 
+    1) General classes
+    2)
+    3)
+ =======================*/
+:root{
+    --clr-primary 	: #6195FF;
+    --clr-headers 	: #10161A;
+    --clr-text 		  : #868F9B; 
+}
+
+*{
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+
+/* =========================
+    1) General Classes 
+=============================*/
+::selection {
+    background-color: #6195FF;
+    color: #FFF;
+}
+html{
+    font-family: sans-serif;
+    font-size: 10px;
+}
+
+body{
+    font-family: 'Varela Round', sans-serif;
+    font-size: 16px;
+}
+h1,h2,h3,h4,h5,h6{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    margin-top: 0px;
+    margin-bottom: 20px;
+    color: #10161A;
+}
+h1 {
+    font-size: 54px;
+}
+
+h2 {
+    font-size: 36px;
+}
+
+h3 {
+    font-size: 21px;
+}
+
+h4 {
+    font-size: 18px;
+}
+
+h5 {
+    font-size: 16px;
+}
+
+
+/* =========================
+    2)  
+=============================*/
+
+
+/* =========================
+    3)  
+=============================*/
+
+
+/* =========================
+    4)  
+=============================*/
