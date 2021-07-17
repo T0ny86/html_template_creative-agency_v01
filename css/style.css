@@ -3,7 +3,8 @@
     2) Logo
     3) Navbar
     4) Intro + Overlay + btn
-    5)
+    5) About
+    6)
  =======================*/
 :root {
   --clr-primary: #6195ff;
@@ -35,12 +36,16 @@ html {
 body {
   font-family: "Varela Round", sans-serif;
   font-size: 16px;
-  background-color: cadetblue;
-  height: 2000px;
+  height: 2000px; /* attention*/
 }
 a {
   font-family: "Varela Round", sans-serif;
+  text-decoration: none;
   color: #fff;
+}
+i,
+a.readmore{
+  color: var(--clr-primary);
 }
 h1,
 h2,
@@ -77,6 +82,7 @@ h5 {
   width: 60%;
   margin-left: auto;
   margin-right: auto;
+  position: relative;  /* attention*/
 }
 .hero {
   position: absolute;
@@ -111,6 +117,31 @@ h5 {
 .hover-effect:hover {
   opacity: 0.6;
 }
+.pad-top{
+  padding-top: 120px;
+}
+
+.section-title{
+  text-align: center;
+  position: relative;
+}
+ .section-title::after{
+  position: absolute;
+  content: "";
+  background-color: var(--clr-primary);
+  height: 4px;
+  width: 40px;
+  left: 50%;
+  bottom:-25px;
+  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+}
+ .section-title .title{
+  text-transform: capitalize;
+}
 /* =========================
     2)  Logo
 =============================*/
@@ -141,7 +172,6 @@ h5 {
   display: inline-block;
 }
 #header nav > ul > li > a {
-  text-decoration: none;
   padding: 3px 5px;
   margin: 3px 5px;
   position: relative;
@@ -244,3 +274,35 @@ h5 {
   color: #fff;
   background-color: var(--clr-primary);
 }
+/* =========================
+    4)  About
+=============================*/
+#about .about-columns{
+  display: flex;
+  margin-top: 100px;
+  width: 100%;
+  justify-content: space-between;
+  
+}
+
+#about .about-columns .col{
+  min-width: 25%;
+  max-width: 30%;
+  border: 1px solid var(--clr-text2);
+}
+
+#about .about-columns .col .col-content{
+  width: 100%;
+  text-align: center;
+  padding: 15px;
+}
+#about .col .col-content .content-title{
+  text-transform: capitalize;
+  margin: 12px;
+}
+#about .col .col-content{
+  color: var(--clr-text);
+}
+/* =========================
+    6)  
+=============================*/
