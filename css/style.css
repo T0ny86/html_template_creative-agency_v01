@@ -4,7 +4,8 @@
     3) Navbar
     4) Intro + Overlay + btn
     5) About
-    6)
+    6) Featured Works
+    7)
  =======================*/
 :root {
   --clr-primary: #6195ff;
@@ -44,7 +45,7 @@ a {
   color: #fff;
 }
 i,
-a.readmore{
+a.readmore {
   color: var(--clr-primary);
 }
 h1,
@@ -82,7 +83,7 @@ h5 {
   width: 60%;
   margin-left: auto;
   margin-right: auto;
-  position: relative;  /* attention*/
+  position: relative; /* attention*/
 }
 .hero {
   position: absolute;
@@ -117,29 +118,29 @@ h5 {
 .hover-effect:hover {
   opacity: 0.6;
 }
-.pad-top{
+.pad-top {
   padding-top: 120px;
 }
 
-.section-title{
+.section-title {
   text-align: center;
   position: relative;
 }
- .section-title::after{
+.section-title::after {
   position: absolute;
   content: "";
   background-color: var(--clr-primary);
   height: 4px;
   width: 40px;
   left: 50%;
-  bottom:-25px;
+  bottom: -25px;
   transform: translateX(-50%);
   -webkit-transform: translateX(-50%);
   -moz-transform: translateX(-50%);
   -ms-transform: translateX(-50%);
   -o-transform: translateX(-50%);
 }
- .section-title .title{
+.section-title .title {
   text-transform: capitalize;
 }
 /* =========================
@@ -212,11 +213,11 @@ h5 {
   bottom: -45px;
   visibility: hidden;
   opacity: 0;
-  transition: opacity .3s;
-  -webkit-transition: opacity .3s;
-  -moz-transition: opacity .3s;
-  -ms-transition: opacity .3s;
-  -o-transition: opacity .3s;
+  transition: opacity 0.3s;
+  -webkit-transition: opacity 0.3s;
+  -moz-transition: opacity 0.3s;
+  -ms-transition: opacity 0.3s;
+  -o-transition: opacity 0.3s;
 }
 #header .container nav .dropdown:hover ul {
   visibility: visible;
@@ -227,7 +228,6 @@ h5 {
   text-align: center;
   padding: 5px 10px;
   min-width: 150px;
-  
 }
 /* =========================
     4)  Intro + Overlay + btn
@@ -277,32 +277,62 @@ h5 {
 /* =========================
     4)  About
 =============================*/
-#about .about-columns{
+#about .about-columns {
   display: flex;
   margin-top: 100px;
   width: 100%;
   justify-content: space-between;
-  
 }
 
-#about .about-columns .col{
-  min-width: 25%;
-  max-width: 30%;
+#about .about-columns .col {
+  min-width: 28%;
+  max-width: 32%;
   border: 1px solid var(--clr-text2);
+  height: 290px;
+  position: relative;
 }
-
-#about .about-columns .col .col-content{
+#about .about-columns .col::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background-color: #1c1d21;
+  z-index: -1;
+  transition: .2s;
+  -webkit-transition: .2s;
+  -moz-transition: .2s;
+  -ms-transition: .2s;
+  -o-transition: .2s;
+}
+#about .about-columns .col:hover:after {
+  width: 100%;
+}
+#about .about-columns .col .col-content {
+  position: absolute;
   width: 100%;
   text-align: center;
-  padding: 15px;
+  top: 45%;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
 }
-#about .col .col-content .content-title{
+#about .col .col-content i {
+  margin-bottom: 20px;
+}
+#about .col .col-content .content-title {
   text-transform: capitalize;
   margin: 12px;
 }
-#about .col .col-content{
+#about .col:hover .col-content .content-title {
+color: #fff;
+}
+#about .col .col-content {
   color: var(--clr-text);
 }
 /* =========================
-    6)  
+    6)  Featured Works
 =============================*/
