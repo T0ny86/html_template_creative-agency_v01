@@ -5,7 +5,8 @@
     4) Intro + Overlay + btn
     5) About
     6) Featured Works
-    7)
+    7) Services
+    8)
  =======================*/
 :root {
   --clr-primary: #6195ff;
@@ -94,6 +95,7 @@ h5 {
   -moz-transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   -o-transform: translate(-50%, -50%);
+  text-align: center;
 }
 .btn {
   display: inline-block;
@@ -118,8 +120,9 @@ h5 {
 .hover-effect:hover {
   opacity: 0.6;
 }
-.pad-top {
+.pad-v {
   padding-top: 120px;
+  padding-bottom: 120px;
 }
 
 .section-title {
@@ -300,11 +303,11 @@ h5 {
   height: 100%;
   background-color: #1c1d21;
   z-index: -1;
-  transition: .2s;
-  -webkit-transition: .2s;
-  -moz-transition: .2s;
-  -ms-transition: .2s;
-  -o-transition: .2s;
+  transition: 0.2s;
+  -webkit-transition: 0.2s;
+  -moz-transition: 0.2s;
+  -ms-transition: 0.2s;
+  -o-transition: 0.2s;
 }
 #about .about-columns .col:hover:after {
   width: 100%;
@@ -328,11 +331,79 @@ h5 {
   margin: 12px;
 }
 #about .col:hover .col-content .content-title {
-color: #fff;
+  color: #fff;
 }
 #about .col .col-content {
   color: var(--clr-text);
 }
 /* =========================
     6)  Featured Works
+=============================*/
+#featured {
+  background-color: #fafafa;
+}
+
+#featured .featured-grid {
+  margin-top: 100px;
+  margin-right: auto;
+  margin-left: auto;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+}
+#featured .featured-grid .grid-item {
+  position: relative;
+}
+#featured .featured-grid .grid-item .grid-img::before {
+  position: absolute;
+  content: "";
+  background-color: #1c1d21;
+  top: -15px;
+  left: -15px;
+  width: calc(100% + 30px);
+  height: calc(100% + 30px);
+  opacity: 0;
+  transition: opacity 0.2s;
+  -webkit-transition: opacity 0.2s;
+  -moz-transition: opacity 0.2s;
+  -ms-transition: opacity 0.2s;
+  -o-transition: opacity 0.2s;
+}
+#featured .featured-grid .grid-item:hover .grid-img::before {
+  opacity: 0.8;
+}
+#featured  .featured-grid .grid-item img {
+  max-width: 350px;
+}
+#featured .grid-content{
+  display: none;
+ 
+}
+#featured .grid-item:hover .grid-content{
+  transition-delay: .2s;
+  display: block;
+}
+#featured .grid-content span{
+  color: var(--clr-primary);
+  text-transform: uppercase; 
+}
+#featured .grid-content h3{
+  color: #fff;
+  width: max-content;
+}
+#featured .grid-content .content-icons a {
+  display: inline-block;
+  
+}
+#featured .grid-content .content-icons a i{
+  color: #fff;
+  display: block;
+  background-color: var(--clr-primary);
+  padding: 20px;
+  margin: 0;
+}
+
+/* =========================
+    7)  Services
 =============================*/
