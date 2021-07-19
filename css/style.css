@@ -373,21 +373,21 @@ h5 {
 #featured .featured-grid .grid-item:hover .grid-img::before {
   opacity: 0.8;
 }
-#featured  .featured-grid .grid-item img {
+#featured .featured-grid .grid-item img {
   max-width: 350px;
 }
 
 /*.grid-content: general class hero (absolute) added*/
 
-#featured .grid-content span{
+#featured .grid-content span {
   color: var(--clr-primary);
   text-transform: uppercase;
 }
-#featured .grid-content h3{
+#featured .grid-content h3 {
   color: #fff;
   width: max-content;
 }
-#featured .grid-content .content-icons a i{
+#featured .grid-content .content-icons a i {
   color: #fff;
   background-color: var(--clr-primary);
   padding: 20px;
@@ -396,30 +396,30 @@ h5 {
 
 #featured .grid-item .grid-content span,
 #featured .grid-item .grid-content h3,
-#featured .grid-item .grid-content .content-icons{
+#featured .grid-item .grid-content .content-icons {
   position: relative;
   top: 15px;
   transition-delay: 0.4s;
-  transition: .2s;
-  -webkit-transition: .2s;
-  -moz-transition: .2s;
-  -ms-transition: .2s;
-  -o-transition: .2s;
+  transition: 0.2s;
+  -webkit-transition: 0.2s;
+  -moz-transition: 0.2s;
+  -ms-transition: 0.2s;
+  -o-transition: 0.2s;
   opacity: 0;
   visibility: hidden;
 }
 
 #featured .grid-item:hover .grid-content span,
 #featured .grid-item:hover .grid-content h3,
-#featured .grid-item:hover .grid-content .content-icons{
- top: 0;
- opacity: 1;
- visibility: visible;
+#featured .grid-item:hover .grid-content .content-icons {
+  top: 0;
+  opacity: 1;
+  visibility: visible;
 }
-#featured .grid-item:hover .grid-content span{
+#featured .grid-item:hover .grid-content span {
   transition-delay: 0.05s;
 }
-#featured .grid-item:hover .grid-content h3{
+#featured .grid-item:hover .grid-content h3 {
   transition-delay: 0.15s;
 }
 #featured .grid-item:hover .grid-content .content-icons {
@@ -428,3 +428,66 @@ h5 {
 /* =========================
     7)  Services
 =============================*/
+#services .section-title{
+  margin-bottom: 100px;
+  
+}
+#services .offers-grid {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 200px,200px;
+  gap: 40px;
+}
+
+#services .offers-grid .grid-item{
+  display: block;
+  position: relative;
+  width: 358px;
+  height: 210px;
+  border: 1px solid var(--clr-text2);
+}
+#services .offers-grid .grid-item::before{
+   position: absolute;
+   content: "";
+   background-color: #1c1d21;
+   top: 0;
+   left: 0;
+   width: 0;
+   height: 100%;
+   transition: width 0.2s;
+   -webkit-transition: width 0.2s;
+   -moz-transition: width 0.2s;
+   -ms-transition: width 0.2s;
+   -o-transition: width 0.2s;
+}
+#services .offers-grid .grid-item:hover:before{
+  width: 100%;
+  transition: width 0.3s;
+  -webkit-transition: width 0.3s;
+  -moz-transition: width 0.3s;
+  -ms-transition: width 0.3s;
+  -o-transition: width 0.3s;
+}
+#services .offers-grid .grid-item .item-content .fa{
+  position: absolute;
+  top: 0;
+  left: -45px;
+ 
+}
+#services .offers-grid .grid-item .item-content .content-title{
+  text-transform: capitalize;
+  width: max-content;
+  transition: color 0.2s;
+  -webkit-transition: color 0.2s;
+  -moz-transition: color 0.2s;
+  -ms-transition: color 0.2s;
+  -o-transition: color 0.2s;
+}
+#services .offers-grid .grid-item:hover .item-content .content-title{
+color: #fff;
+}
+#services .offers-grid .grid-item .item-content .content-text{
+  color: var(--clr-text);
+}
