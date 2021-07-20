@@ -8,7 +8,7 @@
     7) Services
     8) Advantages
     9) Numbers
-   10) 
+   10) Pricing
  =======================*/
 :root {
   --clr-primary: #6195ff;
@@ -598,5 +598,55 @@ input[name="r"]{
 /*------------*/
 
 /* =========================
-    8) Numbers
+    9) Numbers
+=============================*/
+#numbers{
+  background-image: url("../images/background/background2.webp");
+  background-size: cover;
+  background-attachment: fixed;
+  position: relative;
+  width: 100%;
+  height: 280px;
+}
+#numbers::after{
+position: absolute;
+content: "";
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+opacity: 0.8;
+background-color: #1c1d21;
+z-index: 1;
+}
+
+#numbers .container{
+  z-index: 100;
+  height: 100%;
+}
+#numbers .container .numbers-colmuns{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center; 
+}
+#numbers .numbers-colmuns .col {
+width: 100%;
+text-align: center;
+}
+#numbers .numbers-colmuns .col .fa{
+  color: var(--clr-primary);
+  margin-bottom: 20px;  
+}
+#numbers .numbers-colmuns .col .number{
+  color: #fff;
+  font-size: 36px;
+}
+#numbers .numbers-colmuns .col .text{
+  color: #fff;
+}
+
+/* =========================
+    10) Pricing
 =============================*/
