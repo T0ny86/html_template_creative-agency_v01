@@ -6,7 +6,9 @@
     5) About
     6) Featured Works
     7) Services
-    8)
+    8) Advantages
+    9) Numbers
+   10) 
  =======================*/
 :root {
   --clr-primary: #6195ff;
@@ -428,41 +430,40 @@ h5 {
 /* =========================
     7)  Services
 =============================*/
-#services .section-title{
+#services .section-title {
   margin-bottom: 100px;
-  
 }
 #services .offers-grid {
   width: 100%;
   height: 100%;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: 200px,200px;
+  grid-template-rows: 200px, 200px;
   gap: 40px;
 }
 
-#services .offers-grid .grid-item{
+#services .offers-grid .grid-item {
   display: block;
   position: relative;
   width: 358px;
   height: 210px;
   border: 1px solid var(--clr-text2);
 }
-#services .offers-grid .grid-item::before{
-   position: absolute;
-   content: "";
-   background-color: #1c1d21;
-   top: 0;
-   left: 0;
-   width: 0;
-   height: 100%;
-   transition: width 0.2s;
-   -webkit-transition: width 0.2s;
-   -moz-transition: width 0.2s;
-   -ms-transition: width 0.2s;
-   -o-transition: width 0.2s;
+#services .offers-grid .grid-item::before {
+  position: absolute;
+  content: "";
+  background-color: #1c1d21;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  transition: width 0.2s;
+  -webkit-transition: width 0.2s;
+  -moz-transition: width 0.2s;
+  -ms-transition: width 0.2s;
+  -o-transition: width 0.2s;
 }
-#services .offers-grid .grid-item:hover:before{
+#services .offers-grid .grid-item:hover:before {
   width: 100%;
   transition: width 0.3s;
   -webkit-transition: width 0.3s;
@@ -470,13 +471,12 @@ h5 {
   -ms-transition: width 0.3s;
   -o-transition: width 0.3s;
 }
-#services .offers-grid .grid-item .item-content .fa{
+#services .offers-grid .grid-item .item-content .fa {
   position: absolute;
   top: 0;
   left: -45px;
- 
 }
-#services .offers-grid .grid-item .item-content .content-title{
+#services .offers-grid .grid-item .item-content .content-title {
   text-transform: capitalize;
   width: max-content;
   transition: color 0.2s;
@@ -485,9 +485,118 @@ h5 {
   -ms-transition: color 0.2s;
   -o-transition: color 0.2s;
 }
-#services .offers-grid .grid-item:hover .item-content .content-title{
-color: #fff;
+#services .offers-grid .grid-item:hover .item-content .content-title {
+  color: #fff;
 }
-#services .offers-grid .grid-item .item-content .content-text{
+#services .offers-grid .grid-item .item-content .content-text {
   color: var(--clr-text);
 }
+
+/* =========================
+    8) Advantages
+=============================*/
+#advantages {
+  position: relative;
+  display: block;
+  width: 100%;
+background-color: #f9f9f9;
+}
+
+#advantages .advantages-list {
+  float: left;
+ max-width: 45%;
+  
+}
+#advantages .advantages-list .section-title {
+  text-align: left;
+  width: 100%;
+  margin-bottom: 50px;
+}
+#advantages .advantages-list .section-title::after {
+  left: 0;
+  transform: translateX(0);
+  -webkit-transform: translateX(0);
+  -moz-transform: translateX(0);
+  -ms-transform: translateX(0);
+  -o-transform: translateX(0);
+}
+
+#advantages .advantages-list p {
+color: var(--clr-text);
+}
+
+#advantages .advantages-list ul li{
+  list-style: none;
+  margin: 25px 5px;
+  font-size: larger;
+  color: var(--clr-text);
+  position: relative;
+}
+#advantages .advantages-list ul li i{
+  position: absolute;
+  left: -35px;
+  border: 1px solid var(--clr-primary);
+  padding: 3px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+#advantages .advantages-gallery{
+  float: right;
+  max-width: 45%;
+  position: relative;
+  overflow: hidden;
+} 
+#advantages .advantages-gallery .slide img{
+max-width: 550px;
+}
+
+/*-----css slider without javascript-------*/
+.navigation{
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+}
+.bar{
+  width: 50px;
+  height: 10px;
+  border: 2px solid #fff;
+  margin: 6px;
+  cursor: pointer;
+  transition: 0.4s;
+}
+.bar:hover{
+  background: #fff;
+}
+input[name="r"]{
+    position: absolute;
+    visibility: hidden;
+}
+.slides{
+  width: 200%;
+  height: 100%;
+  display: flex;
+}
+.slide{
+  width: 50%;
+  transition: 0.6s;
+}
+.slide img{
+  width: 100%;
+  height: 100%;
+}
+#r1:checked ~ .s1{
+  margin-left: 0;
+}
+#r2:checked ~ .s1{
+  margin-left: -50%;
+}
+/*------------*/
+
+/* =========================
+    8) Numbers
+=============================*/
