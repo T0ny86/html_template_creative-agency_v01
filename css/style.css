@@ -9,7 +9,9 @@
     8) Advantages
     9) Numbers
    10) Pricing
-   11) 
+   11) Testimonial
+   12) Team
+   13) 
  =======================*/
 :root {
   --clr-primary: #6195ff;
@@ -85,6 +87,7 @@ h5 {
 .container {
   display: block;
   width: 60%;
+  height: 100%;
   margin-left: auto;
   margin-right: auto;
   position: relative; /* attention*/
@@ -750,5 +753,73 @@ input[name="r"] {
 }
 
 /* =========================
-    11) 
+    11) Testimonial
+=============================*/
+#testimonial{
+  width: 100%;
+  height: 435px;
+  background-image: url("../images/background/background3.webp");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  position: relative;
+}
+
+#testimonial::before{
+position: absolute;
+content: "";
+top: 0;
+left: 0;
+bottom: 0;
+right: 0;
+background-color: #1c1d21c0;
+}
+
+#testimonial .container .flex-container{
+  display: flex;
+  height: 100%;
+  align-items: center;
+  justify-content: space-around;
+}
+#testimonial .container .flex-container .flex-box{
+  width: 40%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+#testimonial .flex-container .flex-box .box-img {
+  width: fit-content;
+  margin-right: 30px;
+}
+#testimonial .flex-container .flex-box .box-img img{
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+#testimonial .flex-container .flex-box .box-title{
+  width: auto;
+}
+#testimonial .flex-container .flex-box .box-title h3{
+  color: #fff;
+margin: 5px 0;
+}
+#testimonial .flex-container .flex-box .box-title span{
+  color: var(--clr-primary);
+  text-transform: uppercase;
+  font-size: 14px;
+}
+#testimonial .flex-container .flex-box .box-text p{
+  color: #fff;
+  width: 100%;
+
+}
+/* =========================
+    12) Team
+=============================*/
+
+
+/* =========================
+    13) 
 =============================*/
