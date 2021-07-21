@@ -755,7 +755,7 @@ input[name="r"] {
 /* =========================
     11) Testimonial
 =============================*/
-#testimonial{
+#testimonial {
   width: 100%;
   height: 435px;
   background-image: url("../images/background/background3.webp");
@@ -765,23 +765,23 @@ input[name="r"] {
   position: relative;
 }
 
-#testimonial::before{
-position: absolute;
-content: "";
-top: 0;
-left: 0;
-bottom: 0;
-right: 0;
-background-color: #1c1d21c0;
+#testimonial::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: #1c1d21c0;
 }
 
-#testimonial .container .flex-container{
+#testimonial .container .flex-container {
   display: flex;
   height: 100%;
   align-items: center;
   justify-content: space-around;
 }
-#testimonial .container .flex-container .flex-box{
+#testimonial .container .flex-container .flex-box {
   width: 40%;
   display: flex;
   flex-wrap: wrap;
@@ -791,34 +791,137 @@ background-color: #1c1d21c0;
   width: fit-content;
   margin-right: 30px;
 }
-#testimonial .flex-container .flex-box .box-img img{
+#testimonial .flex-container .flex-box .box-img img {
   border-radius: 50%;
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
   -ms-border-radius: 50%;
   -o-border-radius: 50%;
 }
-#testimonial .flex-container .flex-box .box-title{
+#testimonial .flex-container .flex-box .box-title {
   width: auto;
 }
-#testimonial .flex-container .flex-box .box-title h3{
+#testimonial .flex-container .flex-box .box-title h3 {
   color: #fff;
-margin: 5px 0;
+  margin: 5px 0;
 }
-#testimonial .flex-container .flex-box .box-title span{
+#testimonial .flex-container .flex-box .box-title span {
   color: var(--clr-primary);
   text-transform: uppercase;
   font-size: 14px;
 }
-#testimonial .flex-container .flex-box .box-text p{
+#testimonial .flex-container .flex-box .box-text p {
   color: #fff;
   width: 100%;
-
 }
 /* =========================
     12) Team
 =============================*/
 
+#team .container .flex-container {
+  margin-top: 100px;
+  display: flex;
+  justify-content: space-between;
+  
+}
+
+#team .flex-container .flex-box {
+  padding: 40px 20px;
+  background-color: #f4f4f4;
+  width: fit-content;
+  position: relative;
+}
+#team .flex-container .flex-box::before {
+  position: absolute;
+  content: "";
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 0;
+  background-color: #1C1D21;
+  opacity: 0.8;
+  z-index: 1;
+  transition: height .2s;
+  -webkit-transition: height .2s;
+  -moz-transition: height .2s;
+  -ms-transition: height .2s;
+  -o-transition: height .2s;
+}
+#team .flex-container .flex-box:hover{
+  transition-delay: .1s;
+  background-color: #1C1D21;
+}
+#team .flex-container .flex-box:hover::before {
+  height: 100%;
+
+}
+
+#team .flex-container .flex-box .box-img {
+  width: 320px;
+  position: relative;
+}
+#team .flex-container .flex-box .box-img .social-icons {
+  position: absolute;
+  display: block;
+  right: 0;
+  z-index: 1;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity .2s;
+  -webkit-transition: opacity .2s;
+  -moz-transition: opacity .2s;
+  -ms-transition: opacity .2s;
+  -o-transition: opacity .2s;
+}
+#team .flex-container .flex-box:hover .box-img .social-icons {
+  opacity: .9;
+  visibility: visible;
+}
+#team .flex-container .flex-box .box-img .social-icons a:hover {
+  opacity: 0.8;
+}
+#team .flex-container .flex-box .box-img .social-icons a{
+  display: block;
+  background-color: var(--clr-primary);
+  width: 50px;
+  height: 50px;
+  transition: opacity .2s;
+  -webkit-transition: opacity .2s;
+  -moz-transition: opacity .2s;
+  -ms-transition: opacity .2s;
+  -o-transition: opacity .2s;
+}
+#team .flex-container .flex-box .box-img .social-icons a i{
+  color: #fff;
+  width: fit-content;
+  height: fit-content;
+  text-align: center;
+  display: block;
+  margin: auto;
+  padding: 15px 0 10px;
+  
+}
+#team .flex-container .flex-box .box-img img {
+  width: 100%;
+  margin-bottom: 20px;
+}
+#team .flex-container .flex-box .box-text {
+  text-align: center;
+  position: relative;
+  z-index: 2;
+}
+#team .flex-container .flex-box:hover .box-text h3 {
+  transition-delay: .1s;
+  color:#fff;
+}
+#team .flex-container .flex-box .box-text span {
+  color: var(--clr-text);
+  text-transform: uppercase;
+  font-size: 14px;
+}
+#team .flex-container .flex-box:hover .box-text span {
+  color: var(--clr-primary);
+}
 
 /* =========================
     13) 
