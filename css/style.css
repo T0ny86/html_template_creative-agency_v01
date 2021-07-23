@@ -11,13 +11,15 @@
    10) Pricing
    11) Testimonial
    12) Team
-   13) 
+   13) News
+   14) 
  =======================*/
 :root {
   --clr-primary: #6195ff;
   --clr-headers: #10161a;
   --clr-text: #868f9b;
   --clr-text2: #d8dce2;
+  --clr-bg-section:#FAFAFA;
 }
 
 * {
@@ -346,7 +348,7 @@ h5 {
     6)  Featured Works
 =============================*/
 #featured {
-  background-color: #fafafa;
+  background-color: var(--clr-bg-section);
 }
 
 #featured .featured-grid {
@@ -503,7 +505,7 @@ h5 {
   position: relative;
   display: block;
   width: 100%;
-  background-color: #f9f9f9;
+  background-color: var(--clr-bg-section);
 }
 
 #advantages .advantages-list {
@@ -827,7 +829,7 @@ input[name="r"] {
 
 #team .flex-container .flex-box {
   padding: 40px 20px;
-  background-color: #f4f4f4;
+  background-color: var(--clr-bg-section);
   width: fit-content;
   position: relative;
 }
@@ -924,5 +926,58 @@ input[name="r"] {
 }
 
 /* =========================
-    13) 
+    13) News
+=============================*/
+#news{
+  background-color:var(--clr-bg-section) ;
+}
+
+#news .flex-container{
+  margin-top: 100px;
+  width: 100%;
+  
+  background-color: #fff;
+  display: flex;
+  justify-content: space-between;
+}
+
+#news .flex-container .flex-box{
+  width: 360px;
+  height: fit-content;
+}
+#news .flex-box .box-img{
+  width: 360px;
+  margin: 0;
+  padding: 0;
+}
+#news .flex-box .box-img img{
+  width: 100%;
+  margin: 0;
+}
+#news .flex-box .box-description{
+  width: fit-content;
+  height: 100%;
+  padding:10px 20px 40px;
+}
+
+#news .flex-box ul.box-subtitle{
+  margin: 10px 0 20px;
+  padding: 0;
+}
+#news .flex-box .box-subtitle li{
+  list-style: none;
+  display: inline-block;
+  padding: 0 15px 0 0;
+  font-size: 14px;
+}
+#news .flex-box ul.box-subtitle li i{
+  margin-right: 5px;
+}
+#news .flex-box .box-description p{
+  color: var(--clr-text);
+  line-height: 1.6;
+}
+
+/* =========================
+    14) 
 =============================*/
