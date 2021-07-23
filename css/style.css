@@ -12,7 +12,8 @@
    11) Testimonial
    12) Team
    13) News
-   14) 
+   14) Contact
+   15) 
  =======================*/
 :root {
   --clr-primary: #6195ff;
@@ -979,5 +980,89 @@ input[name="r"] {
 }
 
 /* =========================
-    14) 
+    14) Contact
+=============================*/
+#contact .flex-container{
+  width: 100%;
+  margin-top: 100px;
+  margin-bottom: 50px;
+  display: flex;
+  justify-content: space-around;
+}
+#contact .flex-container .flex-box{
+  text-align: center;
+}
+#contact .flex-container .flex-box h3{
+  font-size: 21px;
+  margin: 15px;
+}
+#contact .flex-container .flex-box p{
+  color: var(--clr-text);
+}
+#contact .contact-form{
+  width: calc(50% -10px);
+  text-align: center;
+}
+textarea,
+#contact input[type="text"]{
+  height: 40px;
+  width: calc(100% - 50px);
+  margin: 20px;   
+  border: none;
+  background: #F4F4F4;
+  border-bottom: 2px solid #EEE;
+  color: #354052;
+ 
+  opacity: 0.5;
+  -webkit-transition: 0.2s border-color, 0.2s opacity;
+  transition: 0.2s border-color, 0.2s opacity;
+}
+#contact .contact-form textarea{
+  width: calc(100% - 20px);
+  min-height: 80px;
+  resize: vertical;
+}
+textarea:focus,
+#contact input[type="text"]:focus{
+  border-color: #6195FF;
+  opacity: 1;
+}
+
+/* #contact .contact-form input[name="name"],
+#contact .contact-form input[name="email"] */
+
+#contact #name,
+#contact #email{
+display: inline-block;
+padding: 0;
+margin: 0;
+width: calc(50% - 40px) ;
+
+}
+#contact #name{
+
+ margin-right: 10px;
+}
+#contact #email{
+  margin-left: 10px;
+}
+#contact form button{
+  border: none;
+  background-color: var(--clr-primary);
+  color: #fff;
+  width: 185px;
+  height: 50px;
+  border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+  text-align: center;
+  cursor: pointer;
+}
+#contact form button:hover{
+  opacity: 0.8;
+}
+/* =========================
+    15) 
 =============================*/
