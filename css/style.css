@@ -162,19 +162,46 @@ h5 {
   position: fixed;
   width: 100%;
   z-index: 100;
-  padding-top: 15px;
+  padding-top: 10px;
+  transition: 0.1s;
+  -webkit-transition: 0.1s;
+  -moz-transition: 0.1s;
+  -ms-transition: 0.1s;
+  -o-transition: 0.1s;
 }
 #header .logo {
   float: left;
 }
-#header .logo img {
+#header .logo  {
+  background-image: url("../images/logo-white.webp");
+
+  background-repeat: no-repeat;
+  background-size: contain;
   display: block;
-  width: 100px;
+  width: 95px;
+  height: 50px;
 }
 
 /* =========================
     3)  Navbar
 =============================*/
+
+#header.scroll-effect{
+  background-color: #ffffff;
+  box-shadow: 0 1px rgba(0, 0, 0, 0.1);
+  max-height: 50px;
+  padding-top: 2px;
+}
+#header.scroll-effect .logo{
+  background-image: url("../images/logo-black.webp");
+}
+#header.scroll-effect  li > a{
+  color: #10161a;
+ 
+}
+#header.scroll-effect  li > a:hover{
+  color: var(--clr-primary);
+}
 #header nav {
   float: right;
 }
@@ -185,6 +212,7 @@ h5 {
   display: inline-block;
 }
 #header nav > ul > li > a {
+  font-size: 14px;
   padding: 3px 5px;
   margin: 3px 5px;
   position: relative;

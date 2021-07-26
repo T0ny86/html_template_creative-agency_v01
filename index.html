@@ -18,7 +18,7 @@
     <header id="header">
         <div class="container">
             <div class="logo">
-                <img src="./images/logo-white.webp">
+                <!-- <img src="./images/logo-white.webp"> -->
             </div>
             <nav>
                 <ul>
@@ -580,5 +580,19 @@
             <p>copyright &copy; 2021. devolped by tanous ataa. </p>
         </div>
     </footer>
+    
+    <script>
+     window.addEventListener("scroll", ()=>{
+          let navbar = document.getElementById("header");
+        // let navbar = document.getElementsByTagName("header");
+         let windowPos = window.pageYOffset;
+          if(windowPos > 0){
+             navbar.classList.add("scroll-effect");
+            //  console.log("done")
+          }else{
+              navbar.classList.remove("scroll-effect")
+          }
+     })
+    </script>
 </body>
 </html>
